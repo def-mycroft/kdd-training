@@ -51,7 +51,7 @@ There is a simple syntax that can be used:
     Refers to the list from the argument start to the argument end, exclusive.
 
     * list[start::]
-    * list[:end]
+    * list[::end]
     * list[start:end:step]
 
 ## list/dict comprehension
