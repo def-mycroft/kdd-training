@@ -42,8 +42,36 @@ Note that unlike map and filter, the reduce function returns a single number.
 The map and filter functions return a list of numbers.
 
 ## slicing tools
+
+This is syntax that allows for manipulating lists in various ways.
+
+There is a simple syntax that can be used:
+
+    * start_to_end = list[start:end]
+    Refers to the list from the argument start to the argument end, exclusive.
+
+    * list[start::]
+    * list[:end]
+    * list[start:end:step]
+
 ## list/dict comprehension
 
+List/dict comprehension is a way to construct lists or dicts, similar to the
+way that mathematicians construct sets using set notation.
+
+http://www.secnetix.de/olli/Python/list_comprehensions.hawk
+
+Here are a couple of examples:
+
+    \# Creates a list of numbers up to 999
+    * numbers_to_1thousand = [x for x in range(1000)]
+
+The above creates a list of numbers from (about) 1 to (about) 1000 (I'm not
+sure if the list is comprehensive or not.)
+
+    * [x for x in range(1000) if x % 2]
+
+Above is a list of odd numbers to 1000. 
 
 
 ## lambdas
