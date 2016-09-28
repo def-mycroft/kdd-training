@@ -5,20 +5,22 @@ print list[10]
 
 def smallest():
     """takes an unlimited number of arguments and returns the smallest."""
+    # TODO I don't know how to do this one.
     # I still don't know how to do this one.
     return output
 
 
-def make_odds(SIZE, START):
+def make_odds(size, start):
     """Makes a SIZE length list of odd numbers, starting with START"""
-    # This one doesn't quite work correctly.
-    # need to just create a different list in the filter function, 
-    output = list(filter(lambda x: x % 2 != 0, range(START, 100000)))
-    return range(output[0], output[SIZE + 1])
+    # TODO Returns a "not callable" error.
+    return ([x for x in range(start, (size + 1)) if x % 2])
+
+# print make_odds(10,20)
 
 
 def is_palindrome(number):
     """Returns true if a number is a palindrome."""
+    # TODO figure this one out, I don't know how.
     # Should be able to use slices to compare two things.
     return bool_is_palindrome
 
