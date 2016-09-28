@@ -57,8 +57,7 @@ def biggest(parameter1, parameter2):
 
 def factorial(number):
     """ Calculates the factorial of a number."""
-    output = reduce(lambda x,y: x*y, range(1,(number+1)))
-    return output
+    return reduce(lambda x,y: x*y, range(1,(number+1)))
 
 
 def sum_list(input_list):
