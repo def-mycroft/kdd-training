@@ -1,30 +1,19 @@
 """Solution to HW3"""
-
-def smallest():
+def smallest(*args):
     """takes an unlimited number of arguments and returns the smallest."""
-    # TODO I don't know how to do this one.
-    # I still don't know how to do this one.
-    return output
-
-
-def make_odds(size, start):
-    # TODO I still don't have this one down.
-    # The problem with the below solution is that it does not create the 
-    # correct quantity of the odd numbers, it stops at the start plus 
-    # the end.
-    """Returns a SIZE length list of odd numbers, starting with START"""
-    return list([x for x in range(start, 2 * (start + size + 1)) if x % 2])
+    return reduce(lambda x, y: x if x < y else y, args)
 
 
 def swap_last_first(integer):
     """ Interchanges the first and last digits"""
-    # TODO I don't have a solution here.
-    # should be able to use slice methods on this one. 
-    return output
+    return int(str(integer)[-1] + str(integer)[1:-1] + str(integer)[0])
 
 
 """Functional Solutions"""
-###############################################################################
+def make_odds(size, start):
+    """Returns a SIZE length list of odd numbers, starting with START"""
+    return list([x for x in range(start, (start + size * 2)) if x % 2])
+
 
 def mirror(integer):
     """ Returns the mirrored value of the input"""
@@ -53,11 +42,9 @@ def biggest(parameter1, parameter2):
 
 def factorial(number):
     """ Calculates the factorial of a number."""
-    return reduce(lambda x,y: x*y, range(1,(number+1)))
+    return 1 if number is 1 or number is 0 else number * factorial(number - 1)
 
 
 def sum_list(input_list):
     """Returns the sum of all numbers in a list."""
     return reduce(lambda x,y: x + y, input_list)
-
-
