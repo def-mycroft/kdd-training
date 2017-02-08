@@ -1,8 +1,8 @@
-""" Solution to HW4"""
+"""Speech parser. Written in Python 2.7"""
 from __future__ import print_function
 
 def create_list(filename):
-    """Takes an text file and turns it into a list of words."""
+    """Takes an text file and turns it into a list of words"""
     output_list = []
 
     try:
@@ -22,8 +22,7 @@ def create_list(filename):
 
 
 def clean_list(input_list, ignore_file):
-    """ Sets words to lowercase, removes excluded words and punctuation.
-    """
+    """ Sets words to lowercase, removes excluded words and punctuation"""
     # Create a list of punctuation and of exluded words.
     punctuation_list = create_list('punctuation.txt')
     exclude_list = create_list(ignore_file)
@@ -48,7 +47,7 @@ def clean_list(input_list, ignore_file):
 
 
 def list_occurences(input_list):
-    """ Returns a matrix representing the frequency of occurence"""
+    """Returns a matrix representing the frequency of occurence"""
     output_list = []
 
     for item in input_list:
@@ -87,7 +86,7 @@ def parse_text(
         output_filename='output.txt',
         ignore_file='ignore.txt',
         top=10):
-    """ Displays output. Can write to file or not."""
+    """Displays output. Can write to file or not"""
 
     try:
 
