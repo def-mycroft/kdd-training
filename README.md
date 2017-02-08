@@ -1,3 +1,1 @@
-# README #
-
-Solutions to HW3 for KDD Training. Functions are visible in the solution.py file.
+Miscellaneous Python functions written as part of Fall 2016 KDD Training.
