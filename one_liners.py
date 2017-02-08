@@ -1,11 +1,12 @@
 """Challenge was to execute functions on a single line, as done below"""
+
 def smallest(*args):
-    """takes an unlimited number of arguments and returns the smallest."""
+    """Takes an unlimited number of arguments and returns the smallest"""
     return reduce(lambda x, y: x if x < y else y, args)
 
 
 def swap_last_first(integer):
-    """ Interchanges the first and last digits"""
+    """Interchanges the first and last digits"""
     return int(str(integer)[-1] + str(integer)[1:-1] + str(integer)[0])
 
 
@@ -16,7 +17,7 @@ def make_odds(size, start):
 
 
 def mirror(integer):
-    """ Returns the mirrored value of the input"""
+    """Returns the mirrored value of the input"""
     return str(integer)[-1:(-len(str(integer)) - 1):-1]
 
 
@@ -26,7 +27,7 @@ def print_string(string, factor):
 
 
 def is_palindrome(number):
-    """Returns true if a number is a palindrome."""
+    """Returns true if a number is a palindrome"""
     return str(number)[-1:(-len(str(number)) - 1):-1] == str(number)
 
 
@@ -41,7 +42,7 @@ def biggest(parameter1, parameter2):
 
 
 def factorial(number):
-    """ Calculates the factorial of a number."""
+    """Calculates the factorial of a number"""
     return 1 if number is 1 or number is 0 else number * factorial(number - 1)
 
 
