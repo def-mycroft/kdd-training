@@ -1,0 +1,33 @@
+x = 1
+y = 0
+z = 'a0'
+
+try:
+
+    int(z)
+    x / y
+    
+
+    # will never execute
+    print('Never prints')
+# except ValueError as e:
+#     print('Integer is not valid')
+# except ZeroDivisionError as e:
+#     print(e)
+except Exception as e:
+    print(e)
+finally:
+    print('Always prints')
+
+print('After try block')
+
+def convert_to_int(x):
+    try:
+        return int(x)
+    except:
+        pass
+
+    return 0
+
+print(convert_to_int('7'))
+print(convert_to_int('a'))

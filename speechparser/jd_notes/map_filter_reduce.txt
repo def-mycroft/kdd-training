@@ -1,0 +1,21 @@
+func1 = lambda x: x + 5
+
+def func2(x):
+    return x + 1
+
+a_list = range(10)
+
+# convert each element in a_list using func1
+print(map(func1, a_list))
+
+# convert each element in a_list using func2
+print(map(func2, a_list))
+
+# calculate the sum of a list
+print(reduce(lambda x, y: x + y, a_list))
+
+# calculate the factorial of a list
+print(reduce(lambda x, y:  x * y, range(1, 6)))
+
+# filter out all the elements <= 5
+print(filter(lambda x: x > 5, a_list))

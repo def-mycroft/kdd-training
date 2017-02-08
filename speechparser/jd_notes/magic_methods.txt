@@ -1,0 +1,28 @@
+class Car():
+    speed = 75
+
+    def __str__(self):
+        return 'Speed of this car: ' + str(self.speed)
+
+    def __gt__(self, other):
+        return self.speed > other.speed
+
+    def __add__(self, other):
+        return self.speed + other.speed
+
+car = Car()
+car2 = Car()
+car2.speed = 80
+
+# print(car.speed)
+# # print(dir(car))
+
+# print(car)
+
+# print(car2 + car)
+
+def func(x):
+    return x
+
+
+print(dir(func))
