@@ -1,4 +1,4 @@
-"""Solution to HW3"""
+"""Challenge was to execute functions on a single line, as done below"""
 def smallest(*args):
     """takes an unlimited number of arguments and returns the smallest."""
     return reduce(lambda x, y: x if x < y else y, args)
